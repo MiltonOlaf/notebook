@@ -1,7 +1,7 @@
 # Sujetos
-Un sujeto del derecho es aquel al que puede imputarseles derechos y obligaciones, y los unicos sujetos del derecho son las personas.
+Un sujeto del derecho es aquel al que puede imputarles derechos y obligaciones, y los únicos sujetos del derecho son las personas.
 
-## Clasificacion de lo sujetos del derecho
+## Clasificación de lo sujetos del derecho
 Se clasifican en:
 - **Personas naturales o individuales**.
 - Físicas simples o concretas y son solo individuos de la especie humana.

@@ -52,3 +52,56 @@ A continuación se presentan con mas detalle los del método para generar númer
 - Seleccionar una semilla ($X_0$) con ($D>3$).
 - Seleccionar una semilla ($X_1$) con ($D>3$).
 - $Y_0 = X_0 * X_1$; Sea $X_2$ = los $D$ dígitos del centro, y se $r_i = 0.D$ dígitos del centro.
+- $Y_0 = X_0 + X_1$; Sea $X_2$ = los $D$ dígitos del cetro, y sea $r_i$  = 0.$D$ dígitos del centro.  
+- Sea $Y_i$ = $X_i * X_{i+1}$ y sea $X_{i+2} =$ los $D$ dígitos del centro. y sea $r_{i+2} = 0.D$ dígitos del centro.
+- Repetir el paso 4 hasta obtener los $n$ números $r_i$ deseados.  
+*Nota: Si no es posible obtener los $D$ dígitos del centro, agregue 0s a la izquierda del número $r_i$.*
+
+Generar los primeros 5 números $r_i$ a partir de las semillas $X_0 = 5015$ y $X_1 = 5734$, siendo $D = 4$.
+
+$Y_n$ | $X_n$ | $r_n$ |
+:- | :- | :- |
+$Y_0 = 5015*5734 = 28756010$ | $X_2 = 7560$ | $r_1 = 0.7560$
+$Y_1 = 5734*7560 = 43349049$ | $X_3 = 3490$ | $r_2 = 0.3490$
+$Y_2 = 7560*3490 = 26384400$ | $X_4 = 3844$ | $r_3 = 0.3844$
+$Y_3 = 3490*3844 = 13425560$ | $X_5 = 4255$ | $r_4 = 0.4255$
+$Y_4 = 3844*4255 = 16356200$ | $X_6 = 3562$ | $r_5 = 0.3562$
+
+Ejercicio. Generar los primeros 5 números $R_i$ a partir de las semillas $X_0 = 36$ y $X_1 = 97$, con $D = 2$.
+
+$Y_n$ | $X_n$ | $r_n$
+:- | :- | :-
+$Y_0 = 36*97 = 3492$ | $X_2 = 49$ | $r_1 = 0.49$
+$Y_1 = 97*49 = 4753$ | $X_3 = 75$ | $r_2 = 0.75$
+$Y_2 = 49*75 = 3675$ | $X_4 = 67$ | $r_3 = 0.67$
+$Y_3 = 75*67 = 5025$ | $X_5 = 02$ | $r_4 = 0.02$
+$Y_4 = 67*02 = 0134$ | $X_6 = 13$ | $r_5 = 0.13$
+
+
+### Algoritmo de multiplicador constante
+Este algoritmo no congruencial es similar al algoritmo de productos medios. Los siguientes son los pasos necesarios para generar números pseudoaleatorios con el algoritmo multiplicador constante.  
+1. S
+
+$Y_n$ | $X_n$ | $r_n$
+:- | :- | :-
+$Y_0 = 2010*5340 = 10733400$ | $X_1 = 7334$ | $r_1 = 0.7344$
+$Y_1 = 2010*7334 = 14741340$ | $X_2 = 7413$ | $r_1 = 0.7413$
+$Y_2 = 2010*7413 = 14900130$ | $X_3 = 9001$ | $r_2 = 0.9001$
+
+$Y_n$ | $X_n$ | $r_n$
+:- | :- | :-
+$Y_0 = 6965*9803 = 68277895$ | $X_1 = 2778$ | $r_1 = 0.2778$
+$Y_1 = 6965*2778 = 19348770$ | $X_2 = 3487$ | $r_2 = 0.3487$
+$Y_2 = 6965*3487 = 24286955$ | $X_3 = 2869$ | $r_3 = 0.2869$
+$Y_3 = 6965*2869 = 19982585$ | $X_4 = 9825$ | $r_4 = 0.9825$
+$Y_4 = 6965*9825 = 68431125$ | $X_5 = 4311$ | $r_5 = 0.4311$
+
+### Algoritmo lineal
+Este algoritmo congruencias fue propuesto por D.H. Lehmer en 1951.
+Segun Law y Kelton, este algoritmo ha sido el mas usado. El algoritmo congruencial lineal genera un secuencia de números enteros por medio de la siguiente ecuación.
+\[
+\ {X_i+1 = (aX_1+c) * mod(m)}
+\ i = 1,2,3
+\
+\ X_0 = semilla X_0 > 0
+\]

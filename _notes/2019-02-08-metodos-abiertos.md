@@ -1,16 +1,19 @@
-<small>***08-02-2019***</small>
-
+---
+date: 2019-02-08
+title: matrices especiales
+category: metodos numericos
+---
 # Métodos abiertos
 
 Se basan en formulas que requieren de un solo valor de inicio $x$ o que empiecen con un par de ellos, pero que no necesariamente encierran la raíz. Estos algunas veces divergen, a medida que se avanza en el cálculo. Sin embargo, cuando convergen en general lo hacen mucho mas rápido que los métodos cerrados.
 
 ## Iteración de punto fijo
 
-Sea una ecuación $f(x) = 0$. 
+Sea una ecuación $f(x) = 0​$.
 
-Se arregla la ecuación de manera que $x = g(x)​$. 
+Se arregla la ecuación de manera que $x = g(x)​$.
 
-**Ejemplo.**  $x^2 - 2x + 9 = 0$ 
+**Ejemplo.**  $x^2 - 2x + 9 = 0$
 
 $$
 x = \frac{x^2 + 9}{2}
@@ -105,7 +108,7 @@ $$
 |  7 | 1.972377 | 0.0016| $2\sin{\sqrt{1.972344}} = 1.972377$ |
 
 ### Ejercicio
-Determina la raíz real más grande de $f(x) = 2x^3 - 11.7x^2 + 17.7x -5$ con el método de punto fijo. 
+Determina la raíz real más grande de $f(x) = 2x^3 - 11.7x^2 + 17.7x -5$ con el método de punto fijo.
 $$
 x = \frac{-2x^3 + 11.7x^2 + 5}{17.7}
 $$

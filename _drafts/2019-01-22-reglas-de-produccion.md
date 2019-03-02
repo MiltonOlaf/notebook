@@ -29,3 +29,5 @@ Las proposiciones se pueden clasificar en los siguientes grupos.
 - **Con excepciones**. Del tipo si la temperatura es alta, hace calor, a menos que se tenga aire acondicionado.
 - **Graduales**. Entre mas partidos se ganen mas fácil es ganar una liga.
 - **Conflictiva**. Estas son reglas que mediante un mismo tipo de información contienen información contradictoria lo cual puede acarrear mucho problemas como arrastrar resultados. Este tipo de regla son aquellas que para un mismo antecedente tienen consecuentes distintos.
+
+a

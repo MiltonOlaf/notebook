@@ -1,7 +1,7 @@
 # Para que se usan ciertos números
 Se usan como una fuente confiable de maleabilidad dentro de los modelos de simulación fundamentalmente porque las sucesiones de números pseudo-aleatorios son mas rápidas de generar que la de los números aleatorios.
 La simulación es el proceso de diseñar un modelo de un sistema real que servirá para dirigir experimentos con el propósito de entender, explicar, analizar o mejorar el comportamiento del sistema.
-Para simular el comportamiento de una o mas variables aleatorias es necesario contar con un conjunto suficientemente grande de números aleatorios, pero por desgracia generar una sucesión de números que sean completamente aleatorios resulta muy complicado ya que tendríamos que generar una sucesión infinita de valores que nos permitiera comprobar la inexistencia de correlaciones entre ellos, lo que seria costoso y tardado, volviendo impractica la simulación; por ello es necesario utilizar los números pseudo-aleatorios de los cuales podemos asegurar con un nivel alto de confiabilidad que se comportan de manera similar a un conjunto de números aleatorios. La experimentación directa sobre la realidad genera algunos tipos de problemas como: Costo muy alto, gran lentitud, en ocasiones las pruebas son destructivas, puede no ser ética (sobre todo si están involucrados seres humanos), puede resultar imposible, como por ejemplo, para predecir sucesos futuros.
+Para simular el comportamiento de una o mas variables aleatorias es necesario contar con un conjunto suficientemente grande de números aleatorios, pero por desgracia generar una sucesión de números que sean completamente aleatorios resulta muy complicado ya que tendríamos que generar una sucesión infinita de valores que nos permitiera comprobar la inexistencia de correlaciones entre ellos, lo que seria costoso y tardado, volviendo impracticable la simulación; por ello es necesario utilizar los números pseudo-aleatorios de los cuales podemos asegurar con un nivel alto de confiabilidad que se comportan de manera similar a un conjunto de números aleatorios. La experimentación directa sobre la realidad genera algunos tipos de problemas como: Costo muy alto, gran lentitud, en ocasiones las pruebas son destructivas, puede no ser ética (sobre todo si están involucrados seres humanos), puede resultar imposible, como por ejemplo, para predecir sucesos futuros.
 
 # Como se generan los números pseudo-aleatorios entre 0 y 1?
 Los números pseudo-aleatorios se generan mediante algoritmos deterministicos, es aquellos en los que se obtiene el mismo resultado bajo las mismas condiciones iniciales por lo cual requieren parámetros de arranque.
@@ -36,12 +36,13 @@ Generalmente este algoritmo es incapaz de generar una secuencia de $r_i$ con per
 
 
 #### Tarea
-$Y$ | $X$ | $r$
+$Y​$ | $X​$ | $r​$
 -- | -- | --
-$Y_0 = (317)^2 = 100489$ | $X_1 = 0048$ | $r_1 = 0.0048$ |
-$Y_1 = (048)^2 = 02304$ | $X_2 = 0230$ | $r_2 = 0.0230$ |
-$Y_2 = (230)^2 = 52900$ | $X_3 = 5290$ | $r_3 = 0.5290$ |
-$Y_3 = (290)^2 = 0168100$ | $X_4 = 9841$ | $r_4 = 0.9841$ |
+$Y_0 = (317)^2 = 100489​$ | $X_1 = 0048​$ | $r_1 = 0.0048​$ |
+$Y_1 = (048)^2 = 02304​$ | $X_2 = 0230​$ | $r_2 = 0.0230​$ |
+$Y_2 = (230)^2 = 52900​$ | $X_3 = 5290​$ | $r_3 = 0.5290​$ |
+$Y_3 = (290)^2 = 0168100​$ | $X_4 = 9841​$ | $r_4 = 0.9841​$ |
+
 $Y_4 = (410)^2 = 96845281$ | $X_5 = 8452$ | $r_5 = 0.8452$ |
 ---
 ## Algoritmo de productos medios

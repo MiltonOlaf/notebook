@@ -24,6 +24,7 @@ favicon: favicon.png # favicon name in assets/img/
 
 # Build settings
 remote_theme: miltonolaf/another
+theme: another-theme
 
 markdown: kramdown
 kramdown:

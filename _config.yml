@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: https://miltonolaf.com # the base hostname & protocol for your site, e.g. http://example.com
+url: https://miltonolaf.com/notes # the base hostname & protocol for your site, e.g. http://example.com
 lang: es_MX
 # Social users - twitter, instagram, github, gitlab, codepen profile, youtube and facebook
 social:
@@ -22,36 +22,22 @@ author:
 
 favicon: favicon.png # favicon name in assets/img/
 
-
-# Compress html
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: [local]
-  profile: false
-  blanklines: true
-  startings: [html, head, body]
-
-collections:
-  notes:
-    output: true
-    permalink: /:categories/:year/:month/:title:output_ext
-# Assets - We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir: _sass
-  style: :compressed
 # Build settings
-
-algolia:
-  application_id: O3E8E4I4DN
-  index_name: notebook
-  search_only_api_key: a53c7f9c8141b850e2cce55dad73eb3b
+remote_theme: miltonolaf/another
 
 markdown: kramdown
 kramdown:
   auto_ids: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"
+      page_title: true
+      content_width: "default"
+      post_content: true
 
 exclude:
   - Gemfile
@@ -61,6 +47,7 @@ exclude:
   - .git*
   - .gitignore
   - vendor
+  - _notes/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

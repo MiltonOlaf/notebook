@@ -26,9 +26,14 @@ favicon: favicon.png # favicon name in assets/img/
 remote_theme: miltonolaf/another
 theme: another-theme
 
+paginate: 5
+paginate_path: "/page/:num/"
+
 markdown: kramdown
 kramdown:
   auto_ids: true
+
+permalink: pretty
 
 defaults:
   -
@@ -52,3 +57,4 @@ exclude:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
